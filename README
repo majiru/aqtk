@@ -1,0 +1,8 @@
+aqtk is a library for binding the libAquesTalk10 c library for go programs.
+The library itself can be downloaded from here: https://www.a-quest.com/download.html.
+
+Examples directory shows basic usage of the library.
+
+Caveates:
+	Only works on linux.
+	No support for setting user/dev license keys.

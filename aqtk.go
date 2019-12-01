@@ -40,7 +40,7 @@ func (v *Voice) SetSpeed(speed int) {
 	v.spd = C.int(speed)
 }
 
-// Speed returns the speed the voice.
+// Speed returns the speed of the voice.
 func (v *Voice) Speed() int {
 	return int(v.spd)
 }
@@ -106,7 +106,7 @@ func (v *Voice) Pitch2() int {
 }
 
 // Talk returns bytes representing a wav file
-// speaking the give string. Only phonetic
+// speaking the given string. Only phonetic
 // kana is accepted.
 func (v *Voice) Talk(s string) ([]byte, error) {
 	cs := C.CString(s)
